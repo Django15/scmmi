@@ -1,0 +1,37 @@
+{
+  "name": "scmmi",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "bundle.js",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.9",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.6.4",
+    "image-loader": "0.0.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "sass-loader": "^3.1.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.5",
+    "file-loader": "^0.8.5",
+    "colors": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Django15/scmmi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Django15/scmmi/issues"
+  },
+  "homepage": "https://github.com/Django15/scmmi#readme",
+
+}

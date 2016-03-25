@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+
+    <script type="application/javascript" src="../js/jquery.js"></script>
+
+</head>
+<body>
+<script type="application/javascript" src="../bundle.js" charset="UTF-8"></script>
+<div class="homeWrapper">
+    <div class="background-index"></div>
+    <div class="login_index">
+        <div class="login-close">
+            <div class="click-close"></div>
+        </div>
+        <span class="login">
+                    <form role="form" id="login-form">
+                        <div class="account_login">
+                            <div class="clearfix login_method email_login">
+                                <div class="login_method_label">使用邮箱登陆</div>
+                                <div class="go-register">
+                                    没有帐号？
+                                    <a href="#">点击注册</a>
+                                </div>
+                            </div>
+                            <div class="group group-form">
+                                <ol class="list-input">
+                                    <li class="field text is-focused" id="field-email">
+                                        <label for="email"></label>
+                                        <input class="name_right" id="email" type="email" name="email" value="" placeholder="电子邮件" required="" aria-required="true" aria-described-by="email-tip">
+                                    </li>
+                                    <li class="field password" id="field-password">
+                                        <label for="password"></label>
+                                        <input class="name_right" id="password" type="password" placeholder="密码" name="password" value="" required="" aria-required="true">
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="form-actions">
+                                <button id="Submit">立即登录</button>
+                            </div>
+                            <div class="group group-form">
+                                <ol class="list-input">
+                                    <li class="field-remember">
+                                        <input id="remember-yes" type="checkbox" name="remember" value="true">
+                                        <label>
+                                            记住我
+                                        </label>
+                                        <a href="#" rel="leanModal" class="ction-forgotpw fr " id="forgot-password-link" role="button">忘记密码？</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="login-method-separate">
+                                OR
+                            </div>
+                            <div class="clearfix login-method">
+                                <div class="fl">使用以下账号登陆</div>
+                            </div>
+                            <div class="clearfix party-login">
+                                <a href="#" class="login_with_weibo"></a>
+                                <a href="#" class="login_with_QQ"></a>
+                                <a href="#" class="login_with_wechat"></a>
+                            </div>
+                        </div>
+                    </form>
+                </span>
+    </div>
+    <div class="register_index">
+        <div class="register-close">
+            <div class="click-close"></div>
+        </div>
+                 <span class="register">
+                     <form role="form" id="register-form">
+                         <div class="account_register">
+                             <div class="clearfix register_method">
+                                 <div class="go-login">
+                                     已有账号？
+                                     <a href="#">点击登录</a>
+                                 </div>
+
+                             </div>
+                             <div class="group group-form">
+                                 <ol class="list-input">
+                                     <li class="field text is-focused" id="field-email">
+                                         <label for="email"></label>
+                                         <input class="name_right" id="email" type="email" name="email" value="" placeholder="电子邮件" required="" aria-required="true" aria-described-by="email-tip">
+                                     </li>
+                                     <li class="field text is-focused" id="field-name">
+                                         <label for="name"></label>
+                                         <input class="name_right" id="name" type="text" name="name" value="" placeholder="昵称" required="" aria-required="true" aria-described-by="email-tip">
+                                     </li>
+                                     <li class="field password" id="field-password">
+                                         <label for="password"></label>
+                                         <input class="name_right" id="password" type="password" placeholder="密码" name="password" value="" required="" aria-required="true">
+                                     </li>
+                                     <li class="field password" id="field-repate-password">
+                                         <label for="password"></label>
+                                         <input class="name_right" id="repate_password" type="password" placeholder="确认密码" name="repate_password" value="" required="" aria-required="true">
+                                     </li>
+                                 </ol>
+                             </div>
+                             <div class="field-required-items">
+                                 <p class="field-required" id="field-tos">
+                                     《<a class="color-green" href="#">服务条款</a>》
+                                 </p>
+                                 <span class="fl field-required">和</span>
+                                 <p class="field-required" id="field-tos">
+                                     《<a class="color-green" href="#">服务条款</a>》
+                                 </p>
+                             </div>
+                             <div class="form-actions">
+                                 <button id="Register">创建账号</button>
+                             </div>
+                         </div>
+                     </form>
+                 </span>
+    </div>
+    <div class="header">
+        <nav>
+            <div class="logo_a fl"></div>
+            <ul>
+                <li><a href="javascrip:void(0)">课程</a></li>
+                <li><a href="javascrip:void(0)">院校</a></li>
+                <li><a href="javascrip:void(0)">企业</a></li>
+                <li><a href="javascrip:void(0)">教材</a></li>
+                <li><a href="javascrip:void(0)">名师</a></li>
+            </ul>
+            <ol class="fr">
+                <li class="logo-search">
+                    <input type="text" class="search-input" id="course_name_keyword" placeholder="课程">
+                    <input type="submit" class="search_button" value=" ">
+                </li>
+                <li class="fr dib">
+                    <a href="javascrip:void(0)" class="register-index">注册</a>
+                </li>
+                        <span class="vertical-divider fr dib">
+                        </span>
+                <li class="fr dib">
+                    <a href="javascrip:void(0)" class="login-index">登录</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="banner">
+        <div class="b-img">
+            <div class="banner_img item-1">
+                <a></a>
+            </div>
+            <div class="banner_img item-2">
+                <a></a>
+            </div>
+            <div class="banner_img item-3">
+                <a></a>
+            </div>
+        </div>
+        <div class="carousel-switch">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>职业课程路径</div>
+                <div>Career Path</div>
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="first-career-path-all">
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path one"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name one-name">Android开发工程师</a>
+            </div><div class="career">
+            <a href="javascrip:void(0)" class="fl first-career-path two"></a>
+            <a href="javascrip:void(0)" class="fl first-career-path-name two-name">iOS开发工程师</a>
+        </div>
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path three"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name three-name">HTML5开发工程师</a>
+            </div>
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path four"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name four-name">游戏开发工程师</a>
+            </div>
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path five"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name five-name">云计算/大数据</a>
+            </div>
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path six"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name six-name">Java开发工程师</a>
+            </div>
+            <div class="career">
+                <a href="javascrip:void(0)" class="fl first-career-path seven"></a>
+                <a href="javascrip:void(0)" class="fl first-career-path-name seven-name">软件开发基础</a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix even">
+        <div class="first-title first-title-border">
+            <div class="first-title-left fl">
+                <div>课程</div>
+                <div>Courses</div>
+            </div>
+            <div class="recommand-name fl re-left active recommand-courses" id="recommand_courses">
+                推荐课程
+            </div>
+            <div class="recommand-name fl hot-courses" id="hot_courses">
+                最热课程
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="first-courses-all recommend_courses_show" style="display: block">
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="recommand_courses one">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="first-courses-all hot_courses_show" style="display: none">
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one mr">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+            <a href="javascrip:void(0)" class="hot_courses one">
+                <div class="courses-div-img"></div>
+                <div class="courses-div-title">
+                    <div class="bottom-div-name">Java Web技术及应用</div>
+                    <p class="clearfix">
+                        <span class="first-bottom-more">冯娟娟</span>
+                        <span class="first-bottom-more fr">512人听课</span>
+                    </p>
+                    <p>
+                        <span class="first-bottom-school">锐聘学院</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div></div>
+    </div>
+    <div class="clearfix">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>热门专题</div>
+                <div>Hot Special</div>
+            </div>
+        </div>
+        <div class="clearfix micro-special">
+            <div class="clearfix micro-special-head">
+                <div class="head-title">
+                    新技术，新趋势
+                </div>
+                <div class="head-introduce">
+                    随着互联网的高速发展，移动互联网与大数据的时代已经来临。掌握移动互联网技术与大数据分析是必然趋势。大数据为人类的生活创造前所未有的可量化的维度，未来，更多的改变正蓄势待发。
+                </div>
+            </div>
+            <div class="clearfix micro-special-container">
+                <a class="micro-container mr one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+                <a class="micro-container mr one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+                <a class="micro-container one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+                <a class="micro-container mr one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+                <a class="micro-container mr one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+                <a class="micro-container one">
+                    <div class="micro-div-img"></div>
+                    <div class="micro-div-title">
+                        <div class="micro-div-name">Android开发基础</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix even">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>分享专区</div>
+                <div>Sharing Area</div>
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="clearfix free-collection">
+            <a class="collection-course mr one">
+                <p>PHP全新教程</p>
+            </a>
+            <a class="collection-course mr two">
+                <p>PHP全新教程</p>
+            </a>
+            <a class="collection-course mr three">
+                <p>PHP全新教程</p>
+            </a>
+            <a class="collection-course four"></a>
+            <a class="collection-course mr five"></a>
+            <a class="collection-course mr six"></a>
+            <a class="collection-course seven"></a>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>合作高校</div>
+                <div>Cooperative Institutions</div>
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="first-institutions-all">
+            <a class="first-institutions one"></a>
+            <a class="first-institutions two"></a>
+            <a class="first-institutions three"></a>
+            <a class="first-institutions four"></a>
+            <a class="first-institutions five"></a>
+            <a class="first-institutions six"></a>
+            <a class="first-institutions seven"></a>
+        </div>
+    </div>
+    <div class="clearfix even">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>合作名企</div>
+                <div>Cooperative Enterprise</div>
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="first-enterprise-all clearfix">
+            <a class="enterprise-item one mr"></a>
+            <a class="enterprise-item two mr"></a>
+            <a class="enterprise-item three mr"></a>
+            <a class="enterprise-item four mr"></a>
+            <a class="enterprise-item five"></a>
+        </div>
+    </div>
+    <div class="clearfix">
+        <div class="first-title">
+            <div class="first-title-left fl">
+                <div>名企招聘</div>
+                <div>Enterprise Recruitment</div>
+            </div>
+            <a class="fr show-more" href="javascrip:void(0)">更多</a>
+        </div>
+        <div class="enterprise-recruit clearfix">
+            <div class="recruit_item mr">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+            <div class="recruit_item mr">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+            <div class="recruit_item">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+            <div class="recruit_item mr">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+            <div class="recruit_item mr">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+            <div class="recruit_item">
+                <div class="recruit_info">
+                    <p>
+                        <a class="recruit-title">对日软件开发（提供岗前培训）</a>
+                    </p>
+                    <p class="">
+                        <span class="recruit-salary">4K</span>
+                        应届毕业生 / 本科
+                    </p>
+                    <p class="recruit-work-tempt">"以严谨贯之的公司，以完美要求的团队，加入我们，做一个有工匠精神的工程师。"</p>
+                </div>
+                <div class="company-logo">
+                    <a class="one"></a>
+                    <span class="hover-title">北京日立</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="common-footer">
+        <div class="footer-content clearfix">
+            <div class="footer-link fl">
+                <a href="javascrip:void(0)">关于我们</a>
+                <span>|</span>
+                <a href="javascrip:void(0)">联系我们</a>
+                <span>|</span>
+                <a href="javascrip:void(0)">加入我们</a>
+                <span>|</span>
+                <a href="javascrip:void(0)">鲁ICP备15002315</a>
+            </div>
+            <div class="footer-shortCut clearfix fr">
+                <a href="javascrip:void(0)" class="one">
+                    <div class="footer-ios accode">
+
+                    </div>
+                </a>
+
+                <a href="javascrip:void(0)" class="two">
+                    <div class="footer-android accode">
+
+                    </div>
+                </a>
+
+                <a href="javascrip:void(0)" class="three">
+                    <div class="footer-wechat accode">
+
+                    </div>
+                </a>
+                <a href="javascrip:void(0)" class="four"></a>
+                <a href="javascrip:void(0)" class="five"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
